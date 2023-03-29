@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>hello world!</h1>
+    <p>{{cMessage}}</p>
+    <p>{{title}}</p>
+    <H4>{{outputM}}</H4>
+
+    <input type="text"  [(ngModel)]="username" (keyup.enter )="onKeyup()">
+
+  </body>
+  <app-navbar [fromParent]='pMessage' (MessageEvent)="recieveMessage($event)"></app-navbar>
+
+</html>
